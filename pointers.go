@@ -1,3 +1,7 @@
+/*
+ Like C pointers
+*/
+
 package main
 
 import (

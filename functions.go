@@ -1,9 +1,14 @@
+/*
+	Functions declarations in Go
+*/
+
 package main
 
 import (
 	"fmt"
 )
 
+// Declares a unnamed function
 func unnamedMinMax(x, y int) (int, int) {
 	if x > y {
 		min := y
@@ -16,6 +21,7 @@ func unnamedMinMax(x, y int) (int, int) {
 	}
 }
 
+// Declares a named function
 func minMax(x, y int) (min, max int) {
 	if x > y {
 		min = y
@@ -27,6 +33,7 @@ func minMax(x, y int) (min, max int) {
 	return min, max
 }
 
+// Creates a named function and returns it(the default is to return the named vars)
 func namedMinMax(x, y int) (min, max int) {
 	if x > y {
 		min = y
@@ -38,6 +45,7 @@ func namedMinMax(x, y int) (min, max int) {
 	return
 }
 
+// creates a unnamed vars, and returns anything int, int
 func sort(x, y int) (int, int) {
 	if x > y {
 		return x, y
@@ -53,6 +61,7 @@ func main() {
 	}
 	fmt.Println("the square of ", y, "is ", square(y))
 
+	// Create an anonymous function with an int param and int return
 	square = func(s int) int {
 		return s + s
 	}

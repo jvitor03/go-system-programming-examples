@@ -1,3 +1,7 @@
+/*
+	User interactions in args
+*/
+
 package main
 
 import (
@@ -18,7 +22,7 @@ func main() {
 
 	if minusI {
 		fmt.Print("y/n: ")
-		var answer string
+		var answer string // declare variable, := is the short form that can be only used inside functions.
 		fmt.Scanln(&answer)
 		fmt.Println("You entered: ", answer)
 	} else {
